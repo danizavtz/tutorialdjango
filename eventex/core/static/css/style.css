@@ -3,7 +3,7 @@ body {
 	padding:0;
 	border:0;		/* This removes the border around the viewport in old versions of IE */
 	width:100%;
-	background:#fff;
+	background:#FFF;
 	min-width:600px;	/* Minimum width of layout - remove line if not required */
 				/* The min-width property does not work in old versions of Internet Explorer */
 	font-size:90%;
@@ -36,7 +36,7 @@ img {
 	width:100%;
         text-align:center;
         font-family: Verdana, Sans-Serif;
-        border-bottom: 1px solid #9685BA;
+        border-bottom: 1px solid #000000;
 }
 #header p,
 #header h1,
@@ -64,7 +64,7 @@ img {
 	padding:3px 10px;
 	text-align:center;
 	background:#FFF;
-	color: #9685BA;
+	color: #FF4500;
         text-decoration:none;
 	position:relative;
 	left:15px;
@@ -72,7 +72,7 @@ img {
         font-family:Verdana, Sans-Serif;
 }
 #header ul li a:hover {
-	color:#FF6633;
+	color:#FF6600;
 }
 #header ul li a span {
 	display:block;
@@ -86,19 +86,19 @@ img {
 	clear:both;
 	float:left;
 	width:100%;
-	border-top:1px solid #9685BA;
+	border-top:1px solid #000000;
         text-align:center;
         padding: 15px 0px 15px 0px;
         background: #FFFFFF;
-        color: #3C003C;
+        color: #000000;
         font-family:Verdana, Sans-Serif;
 }
 #footer a{
-        color: #9685BA;
+        color: #2F4F4F;
         font-family:Verdana, Sans-Serif;
 }
 #footer a:hover{
-        color: #FF6633;
+        color: #0000CD;
         text-decoration: underline;
         text-style:bold;
 }
@@ -139,7 +139,7 @@ img {
 }
 /* 3 Column settings */
 .threecol {
-	background:#EEE;        /* right column background colour */
+	background:#FFF;        /* right column background colour */
 }
 .threecol .colmid {
 	right:25%;		/* width of the right column */
@@ -147,7 +147,7 @@ img {
 }
 .threecol .colleft {
 	right:50%;		/* width of the middle column */
-	background:#EEE;	/* left column background colour */
+	background:#FFF;	/* left column background colour */
 }
 .threecol .col1 {
 	width:46%;		/* width of center column content (column width minus padding on either side) */
@@ -162,104 +162,3 @@ img {
 	left:85%;		/* Please make note of the brackets here:
 	 			(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
 }
-/* Artigo do blog */
-.artigo h2 {
-  background-color:#DDD;
-  padding: 1px 1px 1px 1px;
-  font-family:Georgia, Sans-Serif;
-}
-.artigo {
-  margin: 10px 0 10px 0;
-  text-align:justify;
-  font-family:Verdana, Sans-Serif;
-}
-.artigo a {
-  color: black;
-}
-.conteudo{
-  padding: 10px;
-  text-align:justify;
-  font-family:Verdana, Sans-Serif;
-}
-/* Formularios */
-form label {
-  font-family: Helvetica, Arial, sans-serif;
-  display: block;
-}
-textarea {
-  height: 90px;
-}
-th {
-  text-align: right;
-  padding-right: 5px;
-}
-p {
-  font-family: Helvetica, Arial, Sans-Serif;
-}
-
-.miniaturas {
- text-align:center;
-}
-/*Time for the CSS*/
-.slider{
-	width: 605px; /*Same as width of the large image*/
-	position: relative;
-	/*Instead of height we will use padding*/
-	padding-top: 455px; /*That helps bring the labels down*/
-	
-	margin: 100px auto;
-	
-	/*Lets add a shadow*/
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
-}
-
-
-/*Last thing remaining is to add transitions*/
-.slider>img{
-	position: absolute;
-	left: 0; top: 0;
-	transition: all 0.5s;
-}
-
-.slider input[name='slide_switch'] {
-	display: none;
-}
-
-.slider label {
-	/*Lets add some spacing for the thumbnails*/
-	margin: 18px 0 0 18px;
-	border: 3px solid #999;
-	
-	float: left;
-	cursor: pointer;
-	transition: all 0.5s;
-	
-	/*Default style = low opacity*/
-	opacity: 0.6;
-}
-
-.slider label img{
-	display: block;
-}
-
-/*Time to add the click effects*/
-.slider input[name='slide_switch']:checked+label {
-	border-color: #666;
-	opacity: 1;
-}
-/*Clicking any thumbnail now should change its opacity(style)*/
-/*Time to work on the main images*/
-.slider input[name='slide_switch'] ~ img {
-	opacity: 0;
-	transform: scale(1.1);
-}
-/*That hides all main images at a 110% size
-On click the images will be displayed at normal size to complete the effect
-*/
-.slider input[name='slide_switch']:checked+label+img {
-	opacity: 1;
-	transform: scale(1);
-}
-/*Clicking on any thumbnail now should activate the image related to it*/
-
-/*We are done :)*/

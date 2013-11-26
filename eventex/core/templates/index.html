@@ -1,13 +1,53 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
     <head>
-       <title>EventX</title>
+       <title>EventX - {% block titulo %} {% endblock %}</title>
        <link type="text/css" href="{{ STATIC_URL }}css/style.css"
              rel="stylesheet" media="screen" />
+       <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+       <meta http-equiv="Content-Language" content="pt-br"/>
     </head>
     <body>
-        <img src="{{ STATIC_URL }}img/logo.jpeg" />
-        <h1> Bem-Vindo ao Eventex!</h1>
-        <p> O evento mais sensacional do ano depois do Dev in Rio!</p>
+        <div id="header">
+          <img src="{{ STATIC_URL }}img/logo.jpeg" />
+          <h1>{% block h1 %} Bem-Vindo ao Eventex! {% endblock %}</h1>
+          <ul>
+            <li><a href="/">Página Inicial</a></li>
+            <!--<li><a href="#">Exemplo</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Sobre</a></li>-->
+          </ul>
+        </div>
+    <div class="colmask threecol">
+      <div class="colmid">
+        <div class="colleft">
+          <div class="col1">
+	     <!-- Coluna 1 -CENTRAL- inicio -->
+             <p>O evento mais sensacional do ano depois do Dev-in-Rio!</p>
+             <!-- Coluna 1 end -->
+          </div>
+       <div class="col2">
+           <!-- Coluna 2 -ESQUERDA- inicio -->
+           <!-- Coluna 2 fim -->
+       </div>
+       <div class="col3">
+           <!-- Coluna 3 -DIREITA- inicio -->
+           <a href="#" ><img src="{{ STATIC_URL }}/img/feed.png" title="Assine nosso Feed" height="42" width="42"/></a><br/>
+           <a href="/admin"><img src="{{ MEDIA_URL }}admin.png" title="Administrar"/></a><br/>
+           <!--<a href="https://twitter.com/danizavtz" 
+                  class="twitter-follow-button" 
+                  data-show-count="false" data-lang="pt" data-size="large">Seguir @danizavtz
+               </a>
+           <div class="fb-facepile" data-href="http://developers.facebook.com" data-max-rows="2" data-width="300"></div>
+           <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+            Column 3 fim -->
+       </div>
+     </div>
+   </div>
+</div>
+<div id="footer">
+ {% include "rodape.html" %}
+</div>
+
     </body>
 </html>
