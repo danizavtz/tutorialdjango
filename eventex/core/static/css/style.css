@@ -64,7 +64,7 @@ img {
 	padding:3px 10px;
 	text-align:center;
 	background:#FFF;
-	color: #FF4500;
+	color: #0000CD;
         text-decoration:none;
 	position:relative;
 	left:15px;
@@ -98,7 +98,7 @@ img {
         font-family:Verdana, Sans-Serif;
 }
 #footer a:hover{
-        color: #0000CD;
+        color: #FF6600;
         text-decoration: underline;
         text-style:bold;
 }
