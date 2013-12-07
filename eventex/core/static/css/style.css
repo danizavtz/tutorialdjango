@@ -162,3 +162,22 @@ img {
 	left:85%;		/* Please make note of the brackets here:
 	 			(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
 }
+/* formulários */
+label,input{
+    font-family: Helvetica, Arial, sans-serif;
+    display: block;
+    float:left;
+}
+label {
+    text-align: right;
+    width: 35px;
+    padding-right:20px;
+    padding-bottom:10px;
+}
+fieldset {
+    border: solid 1px #000;
+}
+
+br {
+   clear:left;
+}
