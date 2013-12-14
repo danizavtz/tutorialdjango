@@ -11,8 +11,8 @@
        <meta http-equiv="Content-Language" content="pt-br"/>
     </head>
     <body>
-        <div id="header">
-          <img src="{{ STATIC_URL }}img/logo.jpeg" />
+        <div id="header">	
+          <!--<img src="{{ STATIC_URL }}img/logo.jpeg" />-->
           <h1>{% block h1 %} Bem-Vindo ao Eventex! {% endblock %}</h1>
           <ul>
             <li><a href="/">Página Inicial</a></li>
@@ -26,7 +26,6 @@
         <div class="colleft">
           <div class="col1">
 	     <!-- Coluna 1 -CENTRAL- inicio -->
-             
                 {% block content %}
                 {% endblock content %}
              <!-- Coluna 1 end -->
