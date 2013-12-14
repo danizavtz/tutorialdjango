@@ -6,3 +6,4 @@ psycopg2==2.5.1
 Unipath==1.0
 django-decouple==2.1
 south==0.8.4
+mock==1.0.1
