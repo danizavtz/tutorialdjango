@@ -2,6 +2,7 @@
 {% block content %}
 <form action="." method="POST">
     {% csrf_token %}
+    {{ form.non_field_errors }}
     <p>
         <label for="{{ form.name.id_for_label }}">{{ form.name.label }}:</label>
         {{ form.name }}
@@ -18,9 +19,9 @@
         {{ form.email.errors }}
     </p>
     <p>
-        <label for="{{ form.email.id_for_label }}">{{ form.phone.label }}:</label>
-        {{ form.phone }}
-        {{ form.phone.errors }}
+        <label for="{{ form.phone.id_for_label }}">Phone:</label>
+        <input type="text" name="phone0" value="" id="id_phone0">
+        <input type="text" name="phone1" value="" id="id_phone1">
     </p>
     <input type="submit" value="Enviar" class="button">
 </form>
