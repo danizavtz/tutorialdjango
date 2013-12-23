@@ -12,4 +12,6 @@ Scripts
 *.sqlite3
 .DS_Store
 .env
+*.swp
+*.swm
 eventex/staticfiles
