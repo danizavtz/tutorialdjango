@@ -66,6 +66,12 @@ class Talk(models.Model):
         #TODO : USE reverse.
         return '/palestras/%d/' % self.pk
 
+class Course(Talk):
+    slots = models.IntegerField(_('vagas'))
+    notes = models.TextField(_(u'observacoes'))
+
+    objects = PeriodManager()
+
 #def speaker_post_save(signal, instance, sender, **kwargs):
 #    instance.slug = '%s%d' % (slugify(instance.name),instance.id)
 
