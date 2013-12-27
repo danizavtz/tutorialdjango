@@ -1,0 +1,12 @@
+<div class="palestra">
+  <h4>
+    <a href="{{ talk.get_absolute_url }}">
+      {{talk.start_time}} - {{ talk.title }}</a></h4>
+    {% for speaker in talk.speakers.all %}
+      <h5>
+          <a href="{{ speaker.get_absolute_url }}"
+             title="{{ speaker.description| truncatewords:30 }}">
+      {{ speaker.name }}</a></h5>
+    {% endfor %}
+    <p> {{ talk.description }}</p>
+</div>
